@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>woshiwenzi</p>
+    <p>woshiwenzi</p>
+    <p>woshiwenzi</p>
+    <p>woshiwenzi</p>
+    <input type="button" name="" id="btn">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <style>
+    div{
+        position: relative; 
+        height:100px;
+        width:100px;
+        background-color: aqua;
+        display: block;
+    }
+    </style>
+    <script src="jquery-1.12.3.min.js"></script>
+    <script>
+    $("p:first").css("background-color","red");
+    $("div:eq(2)").animate({"left":500},1000);
+    $("div:eq(2)").click(function(){
+        $("div:eq(2)").show(2000);
+    })
+    $("div:eq(2)").click(function(){
+        $("div:eq(2)").hide(2000);
+    })
+    $("#btn").click(function(){
+        $("div:eq(2)").toggle(2000);
+    })
+    $("")
+    </script>
+</body>
+</html>
